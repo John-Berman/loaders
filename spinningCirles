@@ -1,0 +1,101 @@
+<svg version="1.1"
+     width="50" height="50"
+     viewBox="-20 -20 300 300"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg">
+
+     <style>
+        
+        .b1{
+            stroke: none;
+            fill: #b3d9ff;
+        }
+        .b2{
+            stroke: none;
+            fill: #66b3ff;
+        }
+        .b3{
+            stroke: none;
+            fill: #1a8cff;
+        }
+        .b4{
+            stroke: none;
+            fill: #0066cc;
+        }
+       .noshow{
+           fill:none;
+       }
+       .showMe{
+           stroke: none;
+           fill: none;
+       }
+     </style>
+   
+
+    <path id="fib1" d="m 25 125 
+        a 75,80 0 1 0 150 0
+        a 45,50 0 1 0 -90 0
+        z" class="showMe" />
+
+    <circle  r="30" class="b1">
+        <animateMotion 
+            repeatCount="indefinite"
+            calcMode="spline"
+            keyTimes="0; 0.25; 0.5; 0.75; 1"
+            keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+            direction="rotate"
+            dur="2s" >
+            <mpath xlink:href="#fib1"/>
+        </animateMotion>
+    </circle>
+
+  
+    <path id="fib2" d="m 125 25 
+        a 80,75 0 1 0  0 150
+        a 50,45 0 1 0  0 -90
+        z" class="noshow" />
+    <circle  r="30" class="b2">
+        <animateMotion 
+            repeatCount="indefinite"
+                        calcMode="spline"
+            keyTimes="0; 0.25; 0.5; 0.75; 1"
+            keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+            direction="rotate"
+            dur="2s" >
+            <mpath xlink:href="#fib2"/>
+        </animateMotion>
+    </circle>
+    <path id="fib3" d="m 225 125 
+        a 75,80 0 1 0  -150 0
+        a 45,50 0 1 0  90 0 z" class="noshow"
+    /> 
+    <circle  r="30" class="b3">
+        <animateMotion 
+            repeatCount="indefinite"
+            direction="rotate"
+                        calcMode="spline"
+            keyTimes="0; 0.25; 0.5; 0.75; 1"
+            keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+            dur="2s" >
+            <mpath xlink:href="#fib3"/>
+        </animateMotion>
+    </circle>
+    <path id="fib4" d="m 125 225 
+        a 80,75 0 1 0  0 -150
+        a 50,45 0 1 0  0 90 z" class="noshow"
+    />
+    <circle  r="30" class="b1">
+        <animateMotion 
+            direction="rotate"
+                        calcMode="spline"
+            keyTimes="0; 0.25; 0.5; 0.75; 1"
+            keySplines="0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1; 0.5 0 0.5 1"
+            repeatCount="indefinite"
+            dur="2s" >
+            <mpath xlink:href="#fib4"/>
+        </animateMotion>
+    </circle>
+
+</svg>
+
+
